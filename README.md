@@ -4,20 +4,20 @@ This repository provides the artifact for the SC'25 paper titled:
 
 **"Uncovering Power Consumption Variability in Production HPC Systems through Application and Node-Level Empirical Analysis"**
 
-The artifact includes all scripts and resources necessary to reproduce the figures and results from our paper, which investigates job-level and node-level power consumption variability in a production HPC system.
+The artifact includes scripts to reproduce the figures and results from our paper, which investigates job power consumption variability in a production HPC system.
 
 ---
 
 ## Overview
 
-This work presents an empirical analysis of power consumption variability in a real-world HPC system ranked 11th on the TOP500 list. Our analysis focuses on:
+This work presents an empirical analysis of power consumption variability in a real-world HPC system debuted 11th on the TOP500 list. Our analysis focuses on:
 
 - Temporal factors (month, day, time-of-day)
 - Node characteristics (architecture, allocation scale)
 - Application behavior (configuration, user-defined options, exit status)
 - Node placement effects via clustering-based analysis
 
-We propose a two-stage clustering method that reveals hidden spatial imbalance in node usage and its influence on power efficiency.
+We propose a two-stage clustering method that reveals hidden spatial imbalance in node usage and its impact on power efficiency.
 
 ---
 
@@ -25,7 +25,7 @@ We propose a two-stage clustering method that reveals hidden spatial imbalance i
 
 - **C1**: Temporal variability analysis (month, day of week, time-of-day)
 - **C2**: Node architecture and allocation scale-based power variability
-- **C3**: Application-specific and user-level configuration impacts
+- **C3**: Application-specific, user-level configuration, and exit status impacts
 - **C4**: Cluster-based analysis revealing spatial power variability across node ranges
 
 ---
@@ -75,16 +75,6 @@ The artifact consists of the following main tasks:
 
 All output `.pdf` files will be saved in the `results/` directory.
 
----
-
-## Expected Execution Time
-
-| Stage | Estimated Time |
-|-------|----------------|
-| Setup (package installation) | ~5 minutes |
-| Task T1 + T2 + T3            | ~87 minutes total |
-
----
 
 ## Dataset Description
 
