@@ -81,6 +81,6 @@ All output `.pdf` files will be saved in the `results/` directory.
 - **System**: 8,437 compute nodes (Intel Xeon Phi 7250 [KNL] and Intel Xeon Gold 6148 [SKL])
 - **Period**: September 19, 2023 – June 30, 2024
 - **Power data**: Collected at 1-minute intervals from chassis-level power supplies
-- **Job/system metadata**: Extracted from PBSPro and Lustre Monitoring Tool (LMT)
+- **Job/system data**: Extracted from PBSPro and Lustre Monitoring Tool (LMT)
 
 ---
