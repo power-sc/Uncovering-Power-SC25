@@ -36,8 +36,8 @@ We propose a two-stage clustering method that reveals hidden spatial imbalance i
 |------|-------------|
 | `monthly_job_distribution.pdf`, `queue_power.pdf`, `week_power_wait.pdf`, `wait_power.pdf` | Power variability over time and queues (C1) |
 | `node_type_distribution.pdf`, `node_count_distribution.pdf`, `node_count_cdf.pdf` | Node architecture and allocation scale analysis (C2) |
-| `application_distribution.pdf`, `user_vasp_distribution.pdf`, `vasp_exit.pdf` | Application and user configuration effects (C3) |
-| `gaussian_same.pdf`, `gaussian_power.pdf`, `gaussian_power2.pdf` | Application-level clustering visualization |
+| `application_distribution.pdf`, `user_vasp_distribution.pdf`, `vasp_exit.pdf` | User configuration and exit status effects within application (C3) |
+| `gaussian_same.pdf`, `gaussian_power.pdf`, `gaussian_power2.pdf` | Intra-cluster per-node job power variability |
 | `high_power_node.pdf`, `low_power_node.pdf`, `normal_stack.pdf`, `all_stack.pdf` | Job power distribution across node ranges (C4) |
 | `normal_node_monthly.pdf`, `non_normal_node_monthly.pdf`, `power_456.pdf`, `power_non_normal_456.pdf` | Temporal node-range-specific power analysis (C4) |
 
@@ -66,11 +66,11 @@ We propose a two-stage clustering method that reveals hidden spatial imbalance i
 
 The artifact consists of the following main tasks:
 
-| Task | Description | Output Figures |
-|------|-------------|----------------|
-| `T1` | Load input data, preprocess, compute per-node job power | `monthly_job_distribution.pdf`, `queue_power.pdf`, `week_power_wait.pdf`, `wait_power.pdf` |
-| `T2` | Analyze temporal, node-level, and application-level variability | `node_type_distribution.pdf`, `node_count_distribution.pdf`, `application_distribution.pdf`, `vasp_exit.pdf` |
-| `T3` | Perform two-stage clustering and analyze spatial variability | `gaussian_power.pdf`, `power_456.pdf`, `normal_stack.pdf`, `normal_node_monthly.pdf` |
+| Task | Description |
+|------|-------------|
+| `T1` | Load input data, preprocess, compute per-node job power |
+| `T2` | Analyze temporal, node-level, and application-level variability |
+| `T3` | Perform two-stage clustering and analyze spatial variability |
 
 
 All output `.pdf` files will be saved in the `results/` directory.
